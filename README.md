@@ -1,8 +1,8 @@
 # weather-project-using-iot
 
 Weather Server Site Instruction
-1.
 
+1.
 Connect raspberry pi pico to pc and DHT11 sensor to raspberry  
 Wiring : + to VBUS , - to GND, out to GP4
 
@@ -16,16 +16,17 @@ Start puTTy server  – Serial line – com5(check in device manager which port 
 Logging file destination to 
 Select printable output
 
-4
+4.
 Assistant.py
 Install virtual env Create a virtual environment (weatherAI) for AI weather assistant where code will exist but compressed it into AIAssistant.exe will be easy to access and portable
-5
+
+5.
 HTML files: 2
 CSS files :
 JS files:
 1st  for online weather 2nd   for  offline weather
 
-6
+6.
 Install flask python
 Put HTML CSS JS files in templates folder
 Project_weather.py
@@ -34,22 +35,20 @@ Access sensor data from puTTy log file store in variable temp=temperature hum=hu
 In the offline webpage mention {{ temp}} {{ hum }} here python variable will come
 Connect assistant.py or start assistant.py in sub process
 
-7
+7.
 Start flask server and assistant
 Or
 Create batch file to open Local host in browser , project_weather.py and AI_assistant.exe (virtual env)
 
-8
-
+8.
 Open Start Weather.bat
 Site will be hosted in local host
 http://127.0.0.1:5000/
-9
 
+9.
 Done
 
-
-10
+10.
 Installation requirement
 puTTY for connection
 Thonny IDE for raspberry pi pico coding
