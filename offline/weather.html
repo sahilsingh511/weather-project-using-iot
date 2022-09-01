@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="weather.css" />
+  </head>
+  <body>
+      <div class="container">
+          <div class="bckground">
+          <div class="timeput">
+            <div class="time"></div>
+            <div class="details">Vienna 05 Nov, Canada</div>
+          </div>
+          <!--<span class="toggle_btn">
+            <input type="checkbox" id="toggle" name="toggle" value="is_on" onClick="setTimeout(redirect, 2000)" />
+            <label for="toggle" class="toy-toggle">
+              <span class="border1"></span>
+              <span class="border2"></span>
+              <span class="border3"></span>
+              <span class="handle">
+                <span class="handle-off"></span>
+                <span class="handle-on"></span>
+              </span>
+            </label>
+          </span>-->
+          <div class="news">
+            <h1>News</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Quibusdam ratione in est corporis, accusantium earum eius <br>alias explicabo sit porro ipsa ipsum nam eaque atque <br>qui quidem assumenda dolor repellendus!</p>
+          </div>
+          </div>
+          <div class="white_stripe">
+            <div class="temp">
+              <div class="celsius">
+                <div class="weather_icon">
+                  <img src="116.png" alt="sunny" height="80" width="80">
+                </div>
+                <p style="color: gray;">temperature</p>
+                <h1 style="font-weight: bold; font-size: 4rem; padding: 0.6rem;">23&#176;C</h1>
+              </div>
+              <div class="vertical"></div>
+              <div class="status">
+                <div class="condition">
+                  <p>Clear</p>
+                  <p style="color: gray;">weather</p>
+                </div>
+                <div class="wind">
+                  <p>West</p>
+                  <p style="color: gray;">Wind</p>
+                </div>
+              </div>
+            </div>
+            <div class="humidity">
+              <div class="weather_icon">
+                <img src="299.png" alt="humid" height="60" width="60">
+              </div>
+              <div class="humid" style="color: grey;">Humidity</div>
+              <h1 class="humidity_level" style="font-size: 4rem;">63%</h1>
+              <hr />
+              <div class="condition">
+                <p>Overcast</p>
+                <p class="date" style="color: gray;"></p>
+              </div>
+            </div>
+            <div class="button">
+              <input type="image" src="mic.png" height="80" width="50" class="mic">
+            </div>
+          </div>
+      </div>
+      <script type="text/javascript">
+        let time_box=document.querySelector('.time');
+        let date_box=document.querySelector('.date');
+        let time=new Date();
+        let hours=time.getHours();
+        let minutes=time.getMinutes();
+        let meridian=hours>=12?'PM':'AM';
+        time_box.innerHTML=hours+":"+minutes+ " "+meridian;
+        date_box.innerHTML=time.toDateString();
+      </script>
+  </body>
+  </html>
