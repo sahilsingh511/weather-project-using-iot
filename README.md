@@ -1,4 +1,4 @@
-# weather-project-using-iot-main
+# weather-project-using-iot
 
 Weather Server Site Instruction
 1.
